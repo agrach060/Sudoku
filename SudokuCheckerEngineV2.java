@@ -2,9 +2,6 @@ import java.io.*;
 public class SudokuCheckerEngineV2 {
 
    public static void main(String[] args)throws FileNotFoundException {
-      // Note that here I am calling the board object MySudokuBoard
-      // if you named your class something different, you should
-      // find and replace all `MySudokuBoard` with your class name
       boolean allTests = true;
       
       // an empty board is valid, but not solved
@@ -107,18 +104,3 @@ public class SudokuCheckerEngineV2 {
          System.out.println("**** HORRAY: ALL TESTS PASSED ****");
    }
 }
-
-/*
-  ----jGRASP exec: java SudokuCheckerEngineV2
- Checking empty board...passed.
- Checking incomplete, valid board...passed.
- Checking complete, valid board...passed.
- Checking dirty data board...passed.
- Checking row violating board...passed.
- Checking col violating board...passed.
- Checking row&col violating board...passed.
- Checking mini-square violating board...passed.
- **** HORRAY: ALL TESTS PASSED ****
- 
-  ----jGRASP: operation complete.
- */
