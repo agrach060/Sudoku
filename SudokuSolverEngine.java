@@ -2,8 +2,6 @@ import java.io.*;
 public class SudokuSolverEngine {
 
    public static void main(String[] args) throws FileNotFoundException {
-      // Here I have called my class `MySudokuBoard` if you named your class
-      // differently, modify the line below to use your own class name
       SudokuBoard board = new SudokuBoard("boards/valid-complete.sdk");
       System.out.println("Initial board");
       System.out.println(board);
