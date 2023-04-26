@@ -1,7 +1,6 @@
 // Anna Gracheva
 // CS 143
-// L.HW #2: Sudoku #2 (isValid, isSolved)
-//
+
 // This program will check if Sudoku is valid and solved
 
 import java.io.*;
@@ -82,9 +81,6 @@ public class SudokuBoard{
       int[][] mini = new int[3][3];
       for(int r = 0; r < 3; r++) {
          for(int c = 0; c < 3; c++) {
-         // whoa - wild! This took me a solid hour to figure out (at least)
-         // This translates between the "spot" in the 9x9 Sudoku board
-         // and a new mini square of 3x3
             mini[r][c] = cells[(spot - 1) / 3 * 3 + r][(spot - 1) % 3 * 3 + c];
          }
       }
@@ -157,19 +153,3 @@ public class SudokuBoard{
       return printBoard;
    }
 } 
-   
-/* 
-  ----jGRASP exec: java SudokuCheckerEngineV2
- Checking empty board...passed.
- Checking incomplete, valid board...passed.
- Checking complete, valid board...passed.
- Checking dirty data board...passed.
- Checking row violating board...passed.
- Checking col violating board...passed.
- Checking row&col violating board...passed.
- Checking mini-square violating board...passed.
- **** HORRAY: ALL TESTS PASSED ****
- 
-  ----jGRASP: operation complete.
- 
- */
